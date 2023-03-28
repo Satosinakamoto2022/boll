@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const {User, Basket} = require('../models/models')
 
+
 const generateJwt = (id, email, role) => {
     return jwt.sign(
         {id, email, role},
@@ -10,6 +11,7 @@ const generateJwt = (id, email, role) => {
         {expiresIn: '24h'}
     )
 }
+
 
 class UserController {
     async registration(req, res, next) {
