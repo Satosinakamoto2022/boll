@@ -4,6 +4,8 @@ const Auth = () => {
     return (
         <div>
             autg
+
+
         </div>
     );
 };
